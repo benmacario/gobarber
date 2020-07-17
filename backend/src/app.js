@@ -1,5 +1,5 @@
 import express from 'express';
-import routes from './routes';
+import route from './routes';
 
 import './database';
 
@@ -16,7 +16,7 @@ class App {
   }
 
   routes() {
-    this.server.use(routes);
+    this.server.use(route);
   }
 }
 
